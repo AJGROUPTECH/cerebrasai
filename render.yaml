@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: cerebras-telegram-bot
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python bot.py
+    envVars:
+      - key: TELEGRAM_TOKEN
+        sync: false        # Render dashboard da kiritiladi
+      - key: CEREBRAS_API_KEY
+        sync: false        # Render dashboard da kiritiladi
+      - key: WEBHOOK_URL
+        sync: false        # Deploy bo'lgach URL kiritiladi
