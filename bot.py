@@ -16,7 +16,7 @@ from cerebras.cloud.sdk import Cerebras
 # ──────────────────────────────────────────────────────────────
 TELEGRAM_TOKEN   = os.environ.get("TELEGRAM_TOKEN",   "")
 CEREBRAS_API_KEY = os.environ.get("CEREBRAS_API_KEY", "")
-WEBHOOK_URL      = os.environ.get("WEBHOOK_URL",      "")   # https://your-app.onrender.com
+WEBHOOK_URL      = os.environ.get("WEBHOOK_URL",      "")
 PORT             = int(os.environ.get("PORT", 8080))
 # ──────────────────────────────────────────────────────────────
 
