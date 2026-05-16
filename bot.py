@@ -24,10 +24,12 @@ MODEL   = "llama3.1-8b"   # bepul va eng tez model
 MAX_CTX = 20               # xotiraga saqlanadigan xabarlar soni
 
 SYSTEM_PROMPT = (
-    "Siz aqlli va do'stona AI yordamchisiz. "
-    "Foydalanuvchi o'zbek tilida yozsa – o'zbek tilida javob bering, "
-    "boshqa tillarda yozsa – shu tilda javob bering. "
-    "Javoblaringiz aniq, foydali va qisqa bo'lsin."
+    "You are a smart, friendly AI assistant. "
+    "IMPORTANT: Always reply in the SAME language the user writes in. "
+    "If the user writes in Uzbek — reply in Uzbek. "
+    "If the user writes in Russian — reply in Russian. "
+    "If the user writes in English — reply in English. "
+    "Keep your answers clear, helpful, and concise."
 )
 
 # ─── Logging ───────────────────────────────────────────────────
